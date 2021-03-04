@@ -1,0 +1,136 @@
+* {
+  box-sizing: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+input {
+  /* background-image: none; */
+  /* border: none; */
+  /* border: 4 solid #1a0f0f; */
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s;
+}
+
+/* ---------- ALIGN ---------- */
+.align {
+  display: grid;
+  place-items: center;
+}
+
+/* ---------- BUTTON ---------- */
+
+.button {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(39, 143, 255) 0%,
+    rgb(12, 99, 250) 100%
+  );
+  transition: all 0.3s ease;
+  color: #fff;
+  padding: 0.25em 1.5em;
+  font-weight: bold;
+  border: none;
+}
+
+.button:focus,
+.button:hover {
+  background-color: #28ad63;
+}
+
+/* ---------- logins ---------- */
+.logins {
+  width: 400px;
+}
+
+.logins__header {
+  background-color: #fff;
+  border-top-left-radius: 1.25em;
+  border-top-right-radius: 1.25em;
+  border-bottom-left-radius: 1.25em;
+  border-bottom-right-radius: 1.25em;
+  color: #4158d0;
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 437px;
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+  top: -115px;
+}
+
+.logins__form {
+  color: #777;
+  display: grid;
+  border: none;
+  gap: 0.875em;
+  padding: 1.25em 1.625em;
+}
+
+.logins input {
+  border-radius: 0.1875em;
+  min-height: 48px;
+  border: none;
+  min-width: 20rem;
+}
+
+.logins input[type="email"],
+.logins input[type="password"] {
+  /* background-color: #fff; */
+  color: #777;
+  border: none;
+  padding: 0.25em 0.625em;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.logins input[type="submit"] {
+  display: block;
+  outline: none;
+  border: none;
+  border-radius: 4rem;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+form .content {
+  display: flex;
+  height: 50px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+label {
+  margin-left: 10px;
+}
+
+.input-head {
+  border: none;
+  outline: 0;
+}
+
+.forgot-pwd {
+  color: #4158d0;
+}
+.signup-link {
+  color: black;
+  opacity: 0.7;
+}
