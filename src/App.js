@@ -7,8 +7,6 @@ import Section from './Components/Section'
 import Signup from "./Pages/Signup";  
 import Home from './Pages/Home/Home';   
 import NoMatch from './Pages/404Page/404Page';
-// import Nav  from "./Components/Nav"
-// import Nav  from "./Components/Nav/Nav"
 
 class App extends React.Component{
   state={

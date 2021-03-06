@@ -18,6 +18,9 @@ class Forgotpwd extends React.Component{
 }     
     render(){
         return(  
+            <div>
+            <div className="canary-head">
+            <div>
             <div className="align-head">
             <div className="company-logo">
             <img className="logo" height="50px" width="130px" src={logo} alt="logo" />
@@ -27,6 +30,7 @@ class Forgotpwd extends React.Component{
                 <div className="logins">
                 <header className="logins__header">
                 <h2 >Forgot password</h2>
+                <br />
                 <form className="logins__form" onSubmit = {this.handleSubmit}>
                 <div>
                 <label htmlfor="email">Enter a registered email</label>
@@ -46,10 +50,24 @@ class Forgotpwd extends React.Component{
                     <div className="signup-link">
                     Don't have an account? <a className="register" style={{color:'#20b8eb'}} href=" #">Register here</a></div>
                     </Link>
-    </header>
+                </header>
                 </div>
                 </body>
                 </div>
+            </div>
+             {/* <hr />
+    <div className="footer">
+
+    </div> */}
+        </div>
+        <br />
+        <br />
+        <br />
+         <hr />
+    <div className="footer">
+
+    </div>
+        </div>
         )
     }
 }

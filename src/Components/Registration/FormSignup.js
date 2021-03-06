@@ -15,9 +15,13 @@ const FormSignup = ({ submitForm }) => {
   const { handleChange, handleSubmit, values, errors } = useForm(
     submitForm,
     validate
-  );
+  );    
 
   return (  
+    <div>
+    <div>
+    <div className="canary-head">
+    <div>   
     <div className="align-head">
     <div className="company-logo">
      <img className="logo" height="50px" width="130px" src={logo} alt="logo" />
@@ -41,7 +45,7 @@ const FormSignup = ({ submitForm }) => {
           />
         </div>
         <div className="form-inputs">
-          <label cla ssName="title">Last Name</label>
+          <label className="title">Last Name</label>
           <input
             className="form-input"
             type="text"
@@ -100,21 +104,46 @@ const FormSignup = ({ submitForm }) => {
           />
           {errors.password2 && <p>{errors.password2}</p>}
         </div>
-      
-        <span className="form-input-login">
-            {/* <input className="checkbox" type="checkbox" id="remember-me" /> */}
-             I agree to the <a className="conditions" href="/">Terms and conditions </a>
-        </span>
-        <br />
-        <br />
+
+        <div className="content">
+        <div className="checkbox">
+          <input type="checkbox" id="remember-me" />
+        </div>
+        <div className="signup-link">
+        I agree to the <a href="#">Terms and conditions</a></div>
+        </div>
+
+
+
+
         <Link to="/login">
           <button className="form-input-btn" type="submit">
             Register
           </button> 
           </Link>
+          <div className="content">
+        <div className="checkbox">
+        {/* <p className="remember-me">Already have an account?</p> */}
+          <label className="remember-me" htmlfor="remember-me">Already have an account?</label>
+        </div>
+        <Link to="/login">
+        <div className="pass-link">
+          <a className="conditions" href="#">Login</a></div>
+          </Link>
+        </div>
           </div>    
         
       </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    <br />
+    <br />
+     <hr />
+    <div className="footer">
+
+    </div>
     </div>
     </div>
   );

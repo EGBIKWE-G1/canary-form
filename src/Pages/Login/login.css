@@ -4,18 +4,16 @@
   margin: 0;
   padding: 0;
 }
-
-.align-head {
-}
-
 body {
-  /* background-color: #c0c0c0; */
+  max-height: 27rem;
+}
+.canary-head {
   font-family: "Varela Round", sans-serif;
   background-image: url("../../assets/Ovall.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center top;
-  height: 100vh;
+  /* padding: 8vmin; */
   padding: 8vmin;
 }
 
@@ -31,11 +29,11 @@ h2 {
 }
 
 input {
-  font: inherit;
+  /* font: inherit;
   margin: 0;
   padding: 0;
   transition: all 0.3s;
-  width: 270px;
+  width: 270px; */
 }
 
 /* ---------- ALIGN ---------- */
@@ -58,12 +56,7 @@ input {
   /* padding: 0.25em 1.5em; */
   font-weight: bold;
   border: none;
-  padding: 0.74em 1.58em;
-}
-
-.button:focus,
-.button:hover {
-  background-color: #28ad63;
+  /* padding: 0.74em 1.58em; */
 }
 
 /* ---------- login ---------- */
@@ -75,26 +68,27 @@ input {
   border-bottom-left-radius: 1.25em;
   border-bottom-right-radius: 1.25em;
   color: #4158d0;
-  font-family: inherit;
-  width: 400px;
-  height: 440px;
+  font-family: "Varela Round";
+  /* width: 400px; */
+  width: 450px;
+  height: 480px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
+  min-width: none;
   position: relative;
-  left: -27px;
-  top: -115px;
+  left: -15px;
+  top: -2rem;
   box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.1);
 }
 
 .login__form {
-  color: #777;
   display: grid;
   border: none;
-  gap: 0.875em;
+  /* gap: 0.875em; */
 }
 
 .login input {
-  border-radius: 0.1875em;
+  border-radius: 0.1877em;
   min-height: 48px;
   min-width: 18rem;
   border: none;
@@ -116,8 +110,8 @@ input {
 .login input[type="email"],
 .login input[type="password"]:focus {
   outline: none !important;
-  border-color: #20b8eb;
-  box-shadow: 0 0 10px #20b8eb;
+  /* border-color: #20b8eb; */
+  /* box-shadow: 0 0 10px #20b8eb; */
 }
 
 .login input[type="submit"] {
@@ -128,22 +122,30 @@ input {
   margin: 0 auto;
   width: 100%;
 }
-
+.login input[type="submit"]:hover {
+  border-color: #20b8eb;
+  box-shadow: 0 0 10px #20b8eb;
+  background: #20b8eb;
+}
 a {
   text-decoration: none;
   text-align: center;
+  color: #4158d0;
 }
 
 form .content {
-  display: flex;
+  /* display: flex;
   height: 50px;
   font-size: 20px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-around; */
 }
 
 label {
-  margin-left: 10px;
+  /* margin-left: 10px; */
+  color: black;
+  opacity: 0.5;
+  line-height: 240%;
 }
 
 .input-head {
@@ -158,9 +160,7 @@ label {
   color: black;
   opacity: 0.7;
 }
-a {
-  color: #4158d0;
-}
+
 .content {
   color: #4158d0;
 }

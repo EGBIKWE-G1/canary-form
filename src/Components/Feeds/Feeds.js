@@ -16,7 +16,7 @@ class Feeds extends React.Component{
         const {feeds} = this.state
         return(
             <div>
-            <div style={{width:'60%',display:'flex',flexDirection:'column',padding:'0 10px'}}>
+            <div style={{width:'10px',}}>
                 {
                     feeds &&
                     feeds.map(({...f}) =><Feed key={f.id} {...f}/>)

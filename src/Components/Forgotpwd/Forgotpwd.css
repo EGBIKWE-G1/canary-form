@@ -11,9 +11,6 @@ h2 {
 }
 
 input {
-  /* background-image: none; */
-  /* border: none; */
-  /* border: 4 solid #1a0f0f; */
   font: inherit;
   margin: 0;
   padding: 0;
@@ -24,27 +21,6 @@ input {
 .align {
   display: grid;
   place-items: center;
-}
-
-/* ---------- BUTTON ---------- */
-
-.button {
-  cursor: pointer;
-  background: linear-gradient(
-    90deg,
-    rgb(39, 143, 255) 0%,
-    rgb(12, 99, 250) 100%
-  );
-  transition: all 0.3s ease;
-  color: #fff;
-  padding: 0.25em 1.5em;
-  font-weight: bold;
-  border: none;
-}
-
-.button:focus,
-.button:hover {
-  background-color: #28ad63;
 }
 
 /* ---------- logins ---------- */
@@ -61,11 +37,12 @@ input {
   color: #4158d0;
   box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  font-family: "Varela Round";
   width: 437px;
   margin: 0 auto;
   max-width: 100%;
   position: relative;
-  top: -115px;
+  top: 20px;
 }
 
 .logins__form {
@@ -85,7 +62,6 @@ input {
 
 .logins input[type="email"],
 .logins input[type="password"] {
-  /* background-color: #fff; */
   color: #777;
   border: none;
   padding: 0.25em 0.625em;
@@ -96,13 +72,22 @@ input {
   transition: 0.5s;
   outline: none;
 }
-
+.logins input[type="email"]:focus {
+  outline: none !important;
+  border-color: #20b8eb;
+  /* box-shadow: 0 0 10px #20b8eb; */
+}
 .logins input[type="submit"] {
   display: block;
   outline: none;
   border: none;
   border-radius: 4rem;
   margin: 0 auto;
+}
+.logins input[type="submit"]:hover {
+  border-color: #20b8eb;
+  box-shadow: 0 0 10px #20b8eb;
+  background: #20b8eb;
 }
 
 a {

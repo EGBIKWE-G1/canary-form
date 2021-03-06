@@ -5,7 +5,7 @@ import logo from "../../assets/logo.png";
 
 
 class Login extends React.Component{
-    state={
+    state={    
         email:'',
         pwd:''
     }
@@ -23,27 +23,30 @@ class Login extends React.Component{
 
     render(){   
         return(
+            <div>
+            <div className="canary-head">
+            <div>            
             <div className='align-head'>   
             <div className="company-logo">  
             <img className="logo" height="50px" width="130px" src={logo} alt="logo" />
-            </div>      
-<body className="align">
-                <div className="login">
+            </div> 
+            <body className="align">
+                <div className="login">    
                 <header className="login__header">
                 <h2 >Login</h2>
 
                 <form className="login__form" onSubmit = {this.handleSubmit}>
 
-                <div>
+                <div className="label-head">
                 <label htmlfor="email">Email</label>
                 <input  className="input-head" type='email' id="email" name='email' placeholder='mail@mail.com' required onChange={this.handleChange}/>
                 </div>
 
-                <div>
-                <label htmlfor="password">password</label>
+                <div className="label-head">
+                <label htmlfor="password">Password</label>
                  <input  className="input-head" type='password' id="password"  name='pwd' placeholder='password...' required onChange={this.handleChange}/>
                 </div>
-                
+                <br />
                 <div>
                   <input className="button" type="submit"  onSubmit={this.handleSubmit} value="Login" />
                 
@@ -61,14 +64,21 @@ class Login extends React.Component{
                     <div className="signup-link">
                     Don't have an account? <a className="register" style={{color:'#20b8eb'}} href=" #">Register here</a></div>
                     </Link>
-    </header>
+                    
+                </header>
                 </div>
                 </body>
 
             </div>
+            </div>
+            </div>
+        
+             <hr />
+    <div className="footer">
 
+    </div>
+            </div>
         )
     }
 }
-    
 export default withRouter(Login);
